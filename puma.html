@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="puma.css">
+    <title>Atividade</title>
+</head>
+<body onload="welcomeMessage()"></body>>
+    
+<div class="IMC">
+
+    <h2 id="IMC">Calculadora de IMC</h2>
+
+    <label for="inputWeight">Peso (kg):</label>
+    <input type="number" id="inputWeight" min="0" step="0.1" value="70">
+    <br>
+    <label for="inputHeight">Altura (m):</label>
+    <input type="number" id="inputHeight" min="0" step="0.01" value="1.75">
+    <br>
+    <button onclick="calculateIMC()">Calcular IMC</button>
+    <p id="result">IMC: </p>
+    <p id="message">Status: </p>
+</div>
+<div class="Área">
+
+    <h2 id="Calculadora">Calculadora de Área</h2>
+
+      Base: <input type="text" id="base" name="base"><br>
+Altura: <input type="text" id="altura" name="altura"><br>
+<button onclick="calcularArea()">Calcular</button>
+<p id="resultado 2"></p>
+</div>
+
+<div class="tabuada">
+
+    <h2 id="tabuada">Tabuada</h2>
+
+Número: <input type="text" id="numero" name="numero"><br>
+<button onclick="tabuada()">Gerar Tabuada</button> 
+<p id="resultado 3"></p>
+</div>
+
+<div class="Dias da semana"> 
+
+    <h2 id="Dias">Dias da Semana</h2>
+
+    <label for="inputDay">Escolha um número de 1 a 7:</label>
+    <input type="number" id="inputDay" min="1" max="7" step="1" value="1"><br>
+    <button onclick="daydasemana()">Obter Dia da Semana</button>
+    <p id="resultado 4"></p>
+
+</div>
+
+<div class="Média de notas">
+
+<h2 id="mediaNotas">Média de Notas</h2>
+
+Nota 1: <input type="text" id="nota1" name="nota1"><br>
+Nota 2: <input type="text" id="nota2" name="nota2"><br>
+Nota 3: <input type="text" id="nota3" name="nota3"><br>
+Nota 4: <input type="text" id="nota4" name="nota4"><br>
+<button onclick="mediaNotas()">Calcular Média</button>
+
+<p id="resultado 5"></p>
+
+</div>
+
+<div class="sequência de sla">
+
+    <h2 id="sequência">Sequência de Fibonsla</h2>
+
+    <label for="inputNumber">Mostrar Fibonacci:</label>
+    <input type="number" id="inputNumber" min="1" step="1" value="1"><br>
+          <button onclick="calculateFibonacci()">Calcular</button>
+    <p id="resultado 6"></p>
+</div>
+
+<div class="VerificarNum">
+
+    <h2 id="Verificar">Verificar se um Número é Primo</h2>
+
+    Número: <input type="text" id="numero" name="numero"><br>
+    <button onclick="verificarPrimo()">Verificar Primo</button>
+
+<p id="resultado 7"></p>
+</div>
+
+<div class="menu">
+    <button onclick="mostrarInfo()">Informações</button>
+
+<div id="info" class="info">
+    Olá, me chamo Abell. Sou um programador em início de carreira com uma ambição grande. Esta pequena página é uma demonstração do meu conhecimento.
+</div>
+
+<footer style="background-color: #f2f2f2; text-align: center; padding: 10px;">
+    <p>Sobre mim: Sou apaixonado por tecnologia e adoro compartilhar meus conhecimentos. Siga-me no Instagram para acompanhar minhas últimas atualizações.</p>
+    <p>Instagram: <a href="https://www.instagram.com/abell.385" target="_blank">@abell.385</a></p>
+    <p>Muito obrigado por visitar minha página. Sua presença aqui é muito apreciada!</p>
+  </footer>
+
+
+
+    <script src="./puma.js"></script>
+</body>
+</html>
